@@ -45,7 +45,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Amazon handleClick={handleClick} />} />
           <Route path="/cart" element={<Cart cart={cart} setCart={setCart} handleChange={handleChange} />} />
-          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/checkout" element={<Checkout cart={cart} />} />
         </Routes>
       </BrowserRouter>
     </>

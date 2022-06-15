@@ -12,11 +12,6 @@ import { Link } from "react-router-dom";
 const Cart = ({ cart, setCart, handleChange }) => {
 
 
-  const checkout = () => {
-    return (<div>
-      <Checkout />
-    </div>);
-  }
   // hit the button?fast
   const [price, setPrice] = useState(0);
 
@@ -79,8 +74,7 @@ const Cart = ({ cart, setCart, handleChange }) => {
 
         <div>
           <Link to="/checkout">
-
-            <button onClick={() => Checkout()}>Checkout</button>
+            <button >Checkout</button>
           </Link>
         </div>
 
