@@ -6,12 +6,12 @@ import React, { useState } from 'react';
 function calculateTotalPrice(list) {
   let totalPrice = 0;
   list.map((item) => (
-    totalPrice += item.amount * item.price 
+    totalPrice += item.amount * item.price
   ));
   return totalPrice;
 }
 
-function Checkout({ cart, setCart, handleChange }) {
+function Checkout({ cart }) {
 
 
 
